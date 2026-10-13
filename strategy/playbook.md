@@ -6003,6 +6003,16 @@ No, -0.0051; MrBeast Gaming wk1 30-35M (7bc5d1522090) 0.85 vs 0.89 Yes,
 +0.0104. Net +0.0128 over 3 rows, versus +0.20-class misses when I
 recorded the visible counter. No change: keep the 0.05 band; the
 residual is the price of staying honest about an unnamed reason.
+**2026-10-13 01:1xZ (RETRO-20261013-0115): mid-band counter gaps, now
+1W/1L.** Zelenskyy Oct 2-9 80-99 (d3d065046220): xtracker /posts read 51
+vs liquid book ~0.81; recorded 0.45 as OVV, resolved Yes, dBrier +0.266.
+The earlier 0.93-vs-0.63 row went my way. Same week, the Musk Oct 2-9
+140-219 legs all lost: the book's "<260 is dead" read (skipped at
+14:40Z, API 152) was right again. Rule for book mids in 0.75-0.98 that
+contradict my counter read by >= 0.25 with the reason unnamed: record
+at most halfway from the mid to the counter view (0.45 vs 0.81 would have
+been 0.63), and put the counter view in the note as "api view: X".
+Revisit when 3 more of these rows have settled.
 
 ## Utterance-market base-rate gate (enacted DEEP-2026-09-12)
 
@@ -8555,3 +8565,27 @@ dBrier -0.0037; side split No -$64.23 (33 trd), Yes +$19.87 (19 trd);
 say-the-word WSV slice 13 trd 10W/3L +$13.91. OVV line unchanged from the
 02:15Z update. Ruling: no boundary change. The edge was zero, so this was a
 non-trade at fair price and does not bear on the spread rule.
+
+
+## 2026-10-13 01:1xZ update: Berlin set, Miami rain, Zelenskyy, Holborn veto rows settled (FULL tick, RETRO-20261013-0115)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Berlin house 163+ (`ccc9f72c326e`, OVV, fact-finality) | 0.25/0.78 | No | +0.360 | No | **+7.82** |
+| Miami rain Oct 8 (`e563a4f7f4c0`, OVV, same-day weather) | 0.66/0.86 | No | +0.190 | No | **+28.33** |
+| Zelenskyy Oct 2-9 80-99 (`d3d065046220`, OVV) | 0.45/0.81 | No | +0.350 | Yes | **-5.00** |
+| Holborn Green 30-35% (`2a7809f09927`, WSV) | 0.32/0.40 | No | -0.050 | Yes | **-5.00** |
+
+Mechanical ledger (`core/counterfactual.py ledger`): OVV 238 rows, 230
+trd, 100W/130L, +$223.55, dBrier +0.0236; side split No +$159.18 (157
+trd), Yes +$64.38 (73 trd). WSV 65 rows, 55 trd, 10 refused, 29W/26L,
+-$59.36, dBrier -0.0017; side split No -$69.23 (34 trd), Yes +$9.87
+(21 trd). Tool totals, not hand re-sums.
+
+Ruling: no boundary change. The Zelenskyy row was a counter-read gap,
+not a model disagreement; it is handled by the counter-gap band rule
+(mid-band extension, 2026-10-13). Berlin CDU 35-39 (`b3b518386948`,
+0.62 vs 0.45, lost, dBrier +0.18) was a computed knife-edge that I had
+flagged in my own note (Bezirk remainders 0.643 vs 0.637). Rule: when my
+note names a knife-edge that decides the outcome and the margin is
+inside the unreported precincts, record the leg between 0.40 and 0.60.
