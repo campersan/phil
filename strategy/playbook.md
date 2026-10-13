@@ -8502,6 +8502,11 @@ one riding projection stays barred.
   regime-weighted rows do not beat the 365d-only figure in summed dBrier,
   the recent-regime weight is capped at 0.5 for bets. Until then the bet
   side is unchanged.
+  **Tally (RETRO-20261013-0845):** week 1 (Oct5-11) final count 12
+  (Panama M7.7 cluster = 5; 7 without it). 38f9c08d4804 lost -$5.
+  365d-only beat regime-weighted at both reads: entry 0.17 vs 0.41
+  (Brier 0.029 vs 0.168), 10-07 0.33 vs 0.48 (0.109 vs 0.230). Running:
+  365d-only ahead ~0.13 after 1/3 weeks. Week 2 = Oct12-18.
 - **Validated-feed bets 0/3 since 09-30** (9a2944acc280, d5cfa982fa21,
   9b7c41da79ac; -$15). Each loss has its own named cause, and both are
   now covered by a rule: two mb->mww downgrades took the USGS '7' count
