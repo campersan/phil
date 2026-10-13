@@ -1631,6 +1631,19 @@ Prefer, in order:
      outcome-uninformative — with no directional signal there is no
      foregone-edge claim either way on a coin-flip-priced market.
      Market-confirms tally unchanged at n≈6, zero foregone edge.
+   - **No-side skepticism rule (RETRO-20261013-1634, GS `b4975c070360`):**
+     GS Q3 GAAP EPS printed 17.01 vs the 16.41 line; I recorded 0.25 vs
+     mid 0.38, anchored on an LSEG 13.02 consensus after 17 down-revisions
+     while other aggregators sat at 15.4. The low outlier was the wrong
+     benchmark. Earnings-beat OVV counterfactuals are now 0W/2L (-$10),
+     both No-side (HD `65aea7cd91f4`, GS), and earnings forecasts run
+     dBrier +0.028 (n=17). n=2 is small, so this rule narrows the No-side
+     claim and does not bar the category. **Rule: on earnings-beat markets, a below-market
+     estimate needs at least two concordant GAAP-basis consensus sources
+     under the threshold. When the sources disagree by more than ~10%,
+     record no further than halfway from the mid toward my read, and mark
+     it market-agrees.** Large caps beat their own creation-time consensus
+     most quarters. Down-revision streaks alone are not evidence of a miss.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
