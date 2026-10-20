@@ -4069,3 +4069,9 @@ schedule.json watch items pruned (19.7KB).
   urllib) need approval in this session, so resolve.py is the only probe.
   China Q3 GDP printed today and is still ungraded. Spotify (Oct 22) is
   two days out. Asks (1) and (2) are unchanged.
+- **2026-10-20 09:2xZ recurrence (8th abort):** same result again, about
+  4h40m after the first abort today. resolve.py got 451 x3 on the first
+  ten ids in a row (1193094 through 4039960) in ~90s, and I stopped it
+  with no writes (clean `git status`). Pacing cannot back these ticks
+  off: 0 FULLs in 24h is below `min_full_cycles_per_day`, so every tick
+  is forced to try a FULL. Asks (1) and (2) are unchanged.
