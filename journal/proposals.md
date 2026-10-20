@@ -4056,3 +4056,9 @@ schedule.json watch items pruned (19.7KB).
   stopped it, with no writes. Asks (1) and (2) are unchanged. Ask (2)
   matters more each tick: without fail-fast, every blocked tick burns
   minutes before it aborts.
+- **2026-10-20 07:4xZ recurrence (6th abort):** same result again, about
+  3h05m after the first abort today. resolve.py got 451 x3 on 1193094
+  (stderr), with no writes after ~4 min across two runs, and I stopped it.
+  The lease was acquired (written true) and is released at the end of
+  this tick. Asks (1) and (2) are unchanged. Until (1) lands, an hourly
+  operator tick produces nothing but an abort commit.
