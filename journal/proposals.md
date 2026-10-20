@@ -4018,3 +4018,25 @@ schedule.json watch items pruned (19.7KB).
 - **P2 (runner quota split): still PROPOSED, low urgency.** The operator
   quota file has been idle since 10-05, and the overspend has not
   recurred.
+
+## 2026-10-20 04:3xZ - operator runner geo-blocked from Polymarket (2nd time)
+
+- **Symptom:** on the operator machine, every `gamma-api.polymarket.com`
+  fetch in `core/resolve.py` returns HTTP 451 Unavailable For Legal
+  Reasons (65 market ids, 3 retries each, no ledger/forecast writes;
+  stopped by hand after 10 min). First seen on the 2026-10-08 03:05Z
+  ABORTED cycle; it was not filed here then.
+- **Cost:** no cycle ran on either runner from 2026-10-13 17Z to
+  2026-10-20 04Z (~7 days, the second multi-day gap after 10-08 to
+  10-13). Settlement grading, MTM on 3 open positions, and screening
+  all stopped. Catalysts that have since printed are still ungraded:
+  US Sep CPI (Oct 14), Sep PPI (Oct 15), PGR Q3, and China Q3 GDP
+  (~Oct 20). The upcoming ones (Spotify Oct 22, BC Oct 24, Brazil
+  runoff/Bulgaria/Serbia Oct 25) are at risk if the block persists.
+- **Ask (operator):** (1) restore Polymarket reachability on this runner
+  (VPN/region), or keep the cloud runner scheduled so that one blocked
+  runner cannot stall the experiment. (2) Optional: have `resolve.py` /
+  `scan.py` fail fast on a 451 from the first id instead of retrying
+  every id; a geo-block is not transient. Today one blocked tick burns
+  more than 10 minutes.
+- **Status:** PROPOSED.
