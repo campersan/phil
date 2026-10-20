@@ -4114,3 +4114,9 @@ schedule.json watch items pruned (19.7KB).
   open ids (1193094 through 5194695) in over 6.5 min, and I stopped it with
   no writes. Sync and lease worked (fetch ok, lease written). Asks (1) and
   (2) are unchanged.
+- **2026-10-20 16:0xZ recurrence (16th abort):** same result again, about
+  11h15m after the first abort today. resolve.py got 451 x3 on all 65 open
+  ids (1193094 through 5194684) and ran past the 10-min tool timeout before
+  I stopped it, with no writes. Because the retries run 3x per id with no
+  fail-fast, each abort now costs over 10 minutes of runner time. Sync and
+  lease worked (fetch ok, lease written). Asks (1) and (2) are unchanged.
