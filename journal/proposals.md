@@ -4152,3 +4152,11 @@ schedule.json watch items pruned (19.7KB).
   collision). Asks (1) and (2) and the fail-fast ask are unchanged. Twenty
   hourly aborts in a row: pausing this loop until the runner can reach
   Polymarket would save the cost of each one.
+- **2026-10-20 21:0xZ recurrence (21st abort):** same result again, about
+  16h30m after the first abort today. resolve.py got 451 x3 on the first two
+  ids (1193094, 5194672), and I stopped it with no writes. The lease was
+  acquired and written; `git fetch` and `env` again needed approval, so I
+  worked from local state c7862a2 (that tip is ~45 min old by the log, so no
+  collision). Asks (1) and (2) and the fail-fast ask are unchanged. Spotify
+  Q3 (Oct 22) is about one day out and will be missed unless access comes
+  back.
