@@ -4178,3 +4178,12 @@ schedule.json watch items pruned (19.7KB).
   are unchanged. Each retried id costs about 9 seconds, so a resolve pass
   over the whole open book takes longer than the cycle's tool limit. The
   fail-fast ask (abort on the first 451) would cut that to seconds.
+- **2026-10-20 23:4xZ recurrence (24th abort):** same result again, about
+  19h after the first abort today. resolve.py logged HTTP 451 x3 on each of
+  the first 16 ids (1193094 through 5194714), with no ledger or forecast
+  writes. I stopped it after about 3 minutes. Sync worked (not shallow,
+  fetch ok, main == origin/main 15a014f, tip ~45 min old, no collision), and
+  the lease was acquired and written. Asks (1) and (2) and the fail-fast ask
+  are unchanged. Spotify Q3 (Oct 22) and the Brazil runoff (Oct 25) will be
+  missed unless access comes back. Given 24 identical aborts, pausing this
+  runner until the region is fixed would stop the empty commits.
