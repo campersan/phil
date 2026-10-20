@@ -4160,3 +4160,12 @@ schedule.json watch items pruned (19.7KB).
   collision). Asks (1) and (2) and the fail-fast ask are unchanged. Spotify
   Q3 (Oct 22) is about one day out and will be missed unless access comes
   back.
+- **2026-10-20 21:5xZ recurrence (22nd abort):** same result again, about
+  17h20m after the first abort today. resolve.py ran its full 10-minute
+  background limit with no output and no ledger/forecast writes, so it was
+  killed, which matches the 451-retry stall from earlier runs. Sync worked
+  (not shallow, fetch ok, tip b746011 ~45 min old, no collision), and the
+  lease was acquired and written. A direct curl/urllib probe needed
+  approval, so I could not confirm the status code itself. Asks (1) and (2)
+  and the fail-fast ask are unchanged. Spotify Q3 (Oct 22) is under a day
+  out.
