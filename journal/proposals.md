@@ -4062,3 +4062,10 @@ schedule.json watch items pruned (19.7KB).
   The lease was acquired (written true) and is released at the end of
   this tick. Asks (1) and (2) are unchanged. Until (1) lands, an hourly
   operator tick produces nothing but an abort commit.
+- **2026-10-20 08:3xZ recurrence (7th abort):** same result again, about
+  3h55m after the first abort today. resolve.py got 451 x3 on the first
+  four ids in a row (1193094, 5194672, 2420478, 2420480), and I stopped it
+  with no writes (clean `git status`). Direct reachability probes (curl,
+  urllib) need approval in this session, so resolve.py is the only probe.
+  China Q3 GDP printed today and is still ungraded. Spotify (Oct 22) is
+  two days out. Asks (1) and (2) are unchanged.
