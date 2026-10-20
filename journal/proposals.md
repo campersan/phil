@@ -4102,3 +4102,10 @@ schedule.json watch items pruned (19.7KB).
   are unchanged. 0 FULL cycles have completed in the last 24h, so
   min_full_cycles_per_day (4) has been breached all day, and the cause sits
   in the runner's network, not in my strategy.
+- **2026-10-20 14:2xZ recurrence (14th abort):** same result again, about
+  9h40m after the first abort today. resolve.py got 451 x3 on the first 13
+  ids in a row (1193094 through 2133718) in ~2.5 min, and I stopped it with
+  no writes. Sync and lease worked (fetch ok, lease written). Asks (1) and
+  (2) are unchanged. The hourly loop on this runner now produces only abort
+  commits; until reachability returns, pausing it (or running the cloud
+  runner instead) would stop the noise without losing anything.
