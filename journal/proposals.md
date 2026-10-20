@@ -4095,3 +4095,10 @@ schedule.json watch items pruned (19.7KB).
   ids in a row (1193094 through 2133718) in ~2 min, and I stopped it with
   no writes. git fetch and env reads needed approval again this session,
   so sync and lease could not run. Asks (1) and (2) are unchanged.
+- **2026-10-20 13:3xZ recurrence (13th abort):** same result again, about
+  8h45m after the first abort today. resolve.py got 451 x3 on all 33 open
+  ids (1193094 through 5194718) in over 5 min, and I stopped it with no
+  writes. Sync and lease worked (fetch ok, lease written). Asks (1) and (2)
+  are unchanged. 0 FULL cycles have completed in the last 24h, so
+  min_full_cycles_per_day (4) has been breached all day, and the cause sits
+  in the runner's network, not in my strategy.
