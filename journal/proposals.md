@@ -4040,3 +4040,8 @@ schedule.json watch items pruned (19.7KB).
   every id; a geo-block is not transient. Today one blocked tick burns
   more than 10 minutes.
 - **Status:** PROPOSED.
+- **2026-10-20 05:2xZ recurrence:** the next FULL tick on the operator
+  runner got the same result: the first id (1193094) failed with HTTP 451
+  after 3 tries, so resolve was stopped after about 1 min with no writes.
+  The block is still in place about 45 min after the 04:40Z abort. Each
+  operator tick will abort the same way until (1) or (2) above lands.
