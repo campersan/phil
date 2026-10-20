@@ -4079,3 +4079,9 @@ schedule.json watch items pruned (19.7KB).
   5h25m after the first abort today. resolve.py got 451 x3 on the first
   twenty ids in a row (1193094 through 5194686), and I stopped it with no
   writes (clean `git status`). Asks (1) and (2) are unchanged.
+- **2026-10-20 11:0xZ recurrence (10th abort):** same result again, about
+  6h20m after the first abort today. resolve.py got 451 x3 on the first
+  thirteen ids in a row (1193094 through 2133718) in ~2 min, and I stopped
+  it with no writes. In this session git fetch and env reads also need
+  approval, so sync and lease could not run. Asks (1) and (2) are
+  unchanged.
