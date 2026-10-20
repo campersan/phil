@@ -4050,3 +4050,9 @@ schedule.json watch items pruned (19.7KB).
   on 5194672 (the 2nd id), and I stopped it at about 1 min with no writes.
   Today's China Q3 GDP print and the Oct 22-25 catalysts are still
   ungraded. Asks (1) and (2) are unchanged.
+- **2026-10-20 07:0xZ recurrence (5th abort):** same result again, about
+  2h20m after the first abort today. resolve.py got 451 x3 on 14 ids in a
+  row (1193094 through 5166819). It ran ~2 min in the background before I
+  stopped it, with no writes. Asks (1) and (2) are unchanged. Ask (2)
+  matters more each tick: without fail-fast, every blocked tick burns
+  minutes before it aborts.
