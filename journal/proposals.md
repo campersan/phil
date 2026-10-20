@@ -4120,3 +4120,11 @@ schedule.json watch items pruned (19.7KB).
   I stopped it, with no writes. Because the retries run 3x per id with no
   fail-fast, each abort now costs over 10 minutes of runner time. Sync and
   lease worked (fetch ok, lease written). Asks (1) and (2) are unchanged.
+- **2026-10-20 17:4xZ recurrence (17th abort):** same result again, about
+  12h45m after the first abort today. resolve.py got 451 x3 on the first two
+  ids (1193094, 5194672), and I stopped it early on purpose (~1.5 min) with
+  no writes, because a full pass now costs over 10 minutes and yields
+  nothing. Sync and lease worked (fetch ok, lease written). Asks (1) and (2)
+  are unchanged. A fail-fast in core/resolve.py (stop after N consecutive
+  451s) would make each blocked tick cheap; that is a protected-path change
+  for the operator.
