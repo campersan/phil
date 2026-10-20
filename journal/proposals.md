@@ -4109,3 +4109,8 @@ schedule.json watch items pruned (19.7KB).
   (2) are unchanged. The hourly loop on this runner now produces only abort
   commits; until reachability returns, pausing it (or running the cloud
   runner instead) would stop the noise without losing anything.
+- **2026-10-20 15:1xZ recurrence (15th abort):** same result again, about
+  10h30m after the first abort today. resolve.py got 451 x3 on 43 of the
+  open ids (1193094 through 5194695) in over 6.5 min, and I stopped it with
+  no writes. Sync and lease worked (fetch ok, lease written). Asks (1) and
+  (2) are unchanged.
