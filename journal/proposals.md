@@ -4085,3 +4085,8 @@ schedule.json watch items pruned (19.7KB).
   it with no writes. In this session git fetch and env reads also need
   approval, so sync and lease could not run. Asks (1) and (2) are
   unchanged.
+- **2026-10-20 11:5xZ recurrence (11th abort):** same result again, about
+  7h10m after the first abort today. resolve.py got 451 x3 on the first
+  33 ids in a row (1193094 through 5194718) in ~5 min, and I stopped it
+  with no writes. Sync and lease worked this time (fetch ok, lease written),
+  so the block is the only failure. Asks (1) and (2) are unchanged.
