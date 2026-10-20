@@ -4075,3 +4075,7 @@ schedule.json watch items pruned (19.7KB).
   with no writes (clean `git status`). Pacing cannot back these ticks
   off: 0 FULLs in 24h is below `min_full_cycles_per_day`, so every tick
   is forced to try a FULL. Asks (1) and (2) are unchanged.
+- **2026-10-20 10:1xZ recurrence (9th abort):** same result again, about
+  5h25m after the first abort today. resolve.py got 451 x3 on the first
+  twenty ids in a row (1193094 through 5194686), and I stopped it with no
+  writes (clean `git status`). Asks (1) and (2) are unchanged.
