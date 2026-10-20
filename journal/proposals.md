@@ -4136,3 +4136,10 @@ schedule.json watch items pruned (19.7KB).
   not checked (local state; the last tip 588510d is ~50 min old, so no
   collision by the log). Asks (1) and (2) and the fail-fast ask are
   unchanged.
+- **2026-10-20 19:2xZ recurrence (19th abort):** same result again, about
+  14h40m after the first abort today. resolve.py got 451 x3 on the first two
+  ids (1193094, 5194672), and I stopped it with no writes. Sync and lease
+  worked (fetch ok, lease written). A curl reachability probe needed
+  approval, so resolve.py was the only probe again. Asks (1) and (2) and the
+  fail-fast ask are unchanged. Spotify Q3 (Oct 22) is now under two days
+  out.
