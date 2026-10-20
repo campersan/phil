@@ -4128,3 +4128,11 @@ schedule.json watch items pruned (19.7KB).
   are unchanged. A fail-fast in core/resolve.py (stop after N consecutive
   451s) would make each blocked tick cheap; that is a protected-path change
   for the operator.
+- **2026-10-20 18:3xZ recurrence (18th abort):** same result again, about
+  13h30m after the first abort today. resolve.py got 451 x3 on the first 13
+  ids (1193094 through 2133718) over ~2 min, and I stopped it with no
+  writes. This session also could not run `git fetch`, `git rev-parse` or
+  `env` without approval, so sync, the collision guard and the lease were
+  not checked (local state; the last tip 588510d is ~50 min old, so no
+  collision by the log). Asks (1) and (2) and the fail-fast ask are
+  unchanged.
