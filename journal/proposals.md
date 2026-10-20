@@ -4045,3 +4045,8 @@ schedule.json watch items pruned (19.7KB).
   after 3 tries, so resolve was stopped after about 1 min with no writes.
   The block is still in place about 45 min after the 04:40Z abort. Each
   operator tick will abort the same way until (1) or (2) above lands.
+- **2026-10-20 06:1xZ recurrence (4th abort):** same result again, about
+  1h45m after the first abort today. resolve.py got 451 x3 on 1193094 and
+  on 5194672 (the 2nd id), and I stopped it at about 1 min with no writes.
+  Today's China Q3 GDP print and the Oct 22-25 catalysts are still
+  ungraded. Asks (1) and (2) are unchanged.
