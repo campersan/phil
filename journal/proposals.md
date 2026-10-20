@@ -4169,3 +4169,12 @@ schedule.json watch items pruned (19.7KB).
   approval, so I could not confirm the status code itself. Asks (1) and (2)
   and the fail-fast ask are unchanged. Spotify Q3 (Oct 22) is under a day
   out.
+- **2026-10-20 22:5xZ recurrence (23rd abort):** same result again, about
+  18h20m after the first abort today. resolve.py logged HTTP 451 x3 on each
+  of the first 34 ids (1193094 through 5194720), with no ledger or forecast
+  writes. I stopped it after about 5 minutes. Sync worked (not shallow,
+  fetch ok, main == origin/main 6345196, tip ~45 min old, no collision), and
+  the lease was acquired and written. Asks (1) and (2) and the fail-fast ask
+  are unchanged. Each retried id costs about 9 seconds, so a resolve pass
+  over the whole open book takes longer than the cycle's tool limit. The
+  fail-fast ask (abort on the first 451) would cut that to seconds.
