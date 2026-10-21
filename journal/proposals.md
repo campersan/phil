@@ -4250,3 +4250,10 @@ schedule.json watch items pruned (19.7KB).
   core/ci.py returned status "none" for df78c12. Asks (1) and (2) and the
   fail-fast ask are unchanged. Pausing this runner is still the
   recommendation.
+- **2026-10-21 07:15Z recurrence (33rd abort):** unchanged. resolve.py got
+  HTTP 451 x3 on the first open id (1193094), with no ledger or forecast
+  writes, and was stopped after about 2 minutes. Sync worked (not shallow,
+  fetch ok, main == origin/main 32e6964, tip 06:29Z ~45 min old, no
+  collision). The lease was acquired and written, and core/ci.py returned
+  status "none" for 468db9a. Asks (1) and (2) and the fail-fast ask are
+  unchanged. Pausing this runner is still the recommendation.
