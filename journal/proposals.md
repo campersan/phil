@@ -4304,3 +4304,12 @@ schedule.json watch items pruned (19.7KB).
   Sync was clean (not shallow, fetch ok, main == origin/main 9585896, tip
   10:38Z ~45 min old), lease acquired and written. Asks unchanged; pausing
   this runner is still the recommendation.
+- **2026-10-21 12:2xZ recurrence (39th abort):** symptom re-confirmed as
+  `[Errno 54] Connection reset by peer` x3 per id: 27 ids failed
+  (1193094..5194699) in the first ~5 min with zero successes, then the run
+  was stopped at ~8 min; no ledger or forecast writes (git status clean).
+  Sync: fetch needed approval this session, local main clean and up to
+  date with last-known origin/main d3c937d (tip 11:34Z ~46 min old, no
+  collision); lease acquired and written; core/ci.py status "none" for
+  9585896. Ledger: 2 open, cash $963.80. Asks unchanged; pausing this
+  runner is still the recommendation.
