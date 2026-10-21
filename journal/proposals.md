@@ -4242,3 +4242,11 @@ schedule.json watch items pruned (19.7KB).
   tip 04:48Z by the log (~45 min old), no collision. Asks (1) and (2) and
   the fail-fast ask are unchanged. Pausing this runner is still the
   recommendation.
+- **2026-10-21 06:22Z recurrence (32nd abort):** unchanged. resolve.py got
+  HTTP 451 x3 on the first 46 open ids (1193094 through 5194697), with no
+  ledger or forecast writes, and was stopped after about 7 minutes. Sync
+  worked (not shallow, fetch ok, main == origin/main 468db9a, tip 05:36Z
+  ~46 min old, no collision). The lease was acquired and written, and
+  core/ci.py returned status "none" for df78c12. Asks (1) and (2) and the
+  fail-fast ask are unchanged. Pausing this runner is still the
+  recommendation.
