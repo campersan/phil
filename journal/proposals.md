@@ -4187,3 +4187,10 @@ schedule.json watch items pruned (19.7KB).
   are unchanged. Spotify Q3 (Oct 22) and the Brazil runoff (Oct 25) will be
   missed unless access comes back. Given 24 identical aborts, pausing this
   runner until the region is fixed would stop the empty commits.
+- **2026-10-21 00:5xZ recurrence (25th abort):** same result again, about
+  20h after the first abort today. resolve.py logged HTTP 451 x3 on each of
+  the first 33 ids (1193094 through 5194718), with no ledger or forecast
+  writes. I stopped it after about 5 minutes. This session needed approval
+  for git fetch and lease.py, so I worked from local state 52227ee (clean)
+  and did not take the lease. Asks (1) and (2) and the fail-fast ask are
+  unchanged. Pausing this runner is still the recommendation.
