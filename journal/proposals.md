@@ -4276,3 +4276,13 @@ schedule.json watch items pruned (19.7KB).
   acquired and written. Asks (1) and (2) and the fail-fast ask are
   unchanged; a fail-fast check should cover connection resets as well as
   451. Pausing this runner is still the recommendation.
+- **2026-10-21 09:4xZ recurrence (36th abort):** unchanged from the 35th.
+  gamma-api returned `[Errno 54] Connection reset by peer` x3 on all 10 ids
+  resolve.py reached (5194672..5194686). There were zero successes and no
+  ledger or forecast writes, and the run was stopped after about 3 minutes.
+  This session needed approval for every git command (fetch, rev-parse)
+  and for env reads, so it skipped sync, the lease and the CI check, and
+  ran on local state 6e1fcf8. Asks (1) and (2) and the fail-fast ask
+  (cover resets as well as 451) are unchanged. Pausing this runner is
+  still the recommendation: 36 consecutive hourly aborts have produced
+  nothing.
