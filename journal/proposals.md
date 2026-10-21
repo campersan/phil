@@ -4201,3 +4201,11 @@ schedule.json watch items pruned (19.7KB).
   fetch ok, main == origin/main 40d626e, tip ~45 min old, no collision), and
   the lease was acquired and written. Asks (1) and (2) and the fail-fast ask
   are unchanged. Pausing this runner is still the recommendation.
+- **2026-10-21 02:1xZ recurrence (27th abort):** same result again, about
+  22h after the first abort today. resolve.py logged HTTP 451 x3 on the
+  first 32 open ids (1193094 through 5194717), with no ledger or forecast
+  writes, and I stopped it after about 5 minutes. Sync worked (not shallow,
+  fetch ok, main == origin/main f75e143, tip ~45 min old, no collision), and
+  the lease was acquired and written. core/ci.py returned status "none" for
+  40d626e. Asks (1) and (2) and the fail-fast ask are unchanged. Pausing
+  this runner is still the recommendation.
