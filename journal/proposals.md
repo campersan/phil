@@ -4313,3 +4313,11 @@ schedule.json watch items pruned (19.7KB).
   collision); lease acquired and written; core/ci.py status "none" for
   9585896. Ledger: 2 open, cash $963.80. Asks unchanged; pausing this
   runner is still the recommendation.
+- **2026-10-21 13:5xZ recurrence (40th abort):** unchanged. gamma-api
+  returned `[Errno 54] Connection reset by peer` x3 on all 51 ids
+  resolve.py reached (1193094..5166874), zero successes; the run hit the
+  10-min tool timeout and was stopped; no ledger or forecast writes. Sync:
+  fetch ok, local main == origin/main 5767ea1 (tip 12:25Z ~91 min old, no
+  collision); lease acquired and written; core/ci.py status "none" for
+  d3c937d. Ledger: 2 open, cash $963.80. Asks unchanged; pausing this
+  runner is still the recommendation.
