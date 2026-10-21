@@ -4218,3 +4218,19 @@ schedule.json watch items pruned (19.7KB).
   and written. core/ci.py returned status "none" for f75e143. Asks (1) and
   (2) and the fail-fast ask are unchanged. Pausing this runner is still the
   recommendation.
+- **2026-10-21 04:0xZ recurrence (29th abort):** same result again, a full
+  day after the first abort. resolve.py logged HTTP 451 x3 on the first 13
+  open ids (1193094 through 2133718), with no ledger or forecast writes, and
+  I stopped it after about 2 minutes. This session needed approval for every
+  git command and for env reads, so sync, the lease and the CI check were
+  all skipped. Local state eb1f359 was clean, and the tip was 03:12Z by the
+  log, about 50 min old, so there was no collision. Asks (1) and (2) and the
+  fail-fast ask are unchanged. Pausing this runner is still the
+  recommendation.
+- **2026-10-21 04:48Z recurrence (30th abort):** unchanged. resolve.py got
+  HTTP 451 x3 on the first 16 open ids (1193094 through 5194714), with no
+  ledger or forecast writes, and was stopped after about 3 minutes. The
+  lease was acquired and written. The 29th abort's journal lines were left
+  uncommitted by that session and are committed with this one. Asks (1) and
+  (2) and the fail-fast ask are unchanged. Pausing this runner is still the
+  recommendation.
