@@ -8607,3 +8607,35 @@ not a model disagreement; it is handled by the counter-gap band rule
 flagged in my own note (Bezirk remainders 0.643 vs 0.637). Rule: when my
 note names a knife-edge that decides the outcome and the margin is
 inside the unreported precincts, record the leg between 0.40 and 0.60.
+
+
+## 2026-10-21 16:55Z update: China macro OVV pair, quake WSV, Rio governor settled (FULL, RETRO-20261021-1655)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| China CPI 0.9-1.0% (`fc10ca9ae3bb`, OVV) | 0.50/0.62 | No | +0.12 | Yes | **-5.00** |
+| China Q3 GDP 4.3-4.6 (`a6e1986d2998`, OVV, No frame) | 0.50/0.285 | No | +0.21 | Yes | **-5.00** |
+| >13 M5.5+ Oct12-18 (`0927f901cea4`, WSV) | 0.10/0.26 | No | +0.09 | No | **+1.17** |
+| Miami rain Oct 12 (`f7f05dfd629d`, WSV) | 0.03/0.495 | No | - | No | refused (entry 0.999) |
+
+Mechanical ledger (`core/counterfactual.py ledger`): OVV 242 rows, 234
+trd, 100W/134L, +$203.55, dBrier +0.0259. WSV 67 rows, 56 trd, 30W/26L,
+-$58.19, dBrier -0.0061. feed-days-gate 1 trd +$6.90 (Mandeb 190-209
+`706ab3d9b265`, n=1, gate kept). Tool totals, not hand re-sums. Ruling:
+no boundary change. Both China vetoes saved the stake, which is evidence
+against relaxing the veto on consensus-centred China official-print
+brackets.
+
+**Brazil STATE races get the right-ward poll correction too
+(RETRO-20261021-1655, n=1 at state level).** Rio governor R1: Ruas (PL)
+49.27 valid vs Paes 42.76. The final polls I used (Datafolha, Quaest)
+had Ruas at 15-25 and Paes winning the runoff by 13-16. My market-agrees
+rows were 0.89 and 0.80, and both lost. The presidential correction (n=3,
+about 6pt on margin) was never applied to state rows, and the state miss
+was roughly 4x larger. Rule: on any Brazilian governor/senate row with a
+PL or allied-right candidate in the top two, (a) shift the right
+candidate's share by at least the presidential correction (about 3.5 on
+share), (b) widen the share sd to at least 8pt, because state polling is
+sparser and the observed miss was far larger, and (c) do not record the
+non-right frontrunner above 0.75 to win from polls alone. Keep these rows
+`unvalidated-method` until n>=3 state races are graded.
