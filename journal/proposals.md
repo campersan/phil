@@ -4295,3 +4295,12 @@ schedule.json watch items pruned (19.7KB).
   "none" for 6e1fcf8. Asks (1) and (2) and the fail-fast ask (cover
   resets as well as 451) are unchanged. Pausing this runner is still the
   recommendation.
+- **2026-10-21 11:2xZ recurrence (38th abort):** unchanged. resolve.py ran
+  the full 10-minute tool timeout with no completion and was stopped; no
+  ledger or forecast writes (git status clean afterwards). Its error lines
+  could not be captured (unpiped/backgrounded reruns and a direct curl
+  probe of gamma-api needed approval in this session), so the reset-vs-451
+  symptom is unconfirmed this tick; the hang length matches the 37th.
+  Sync was clean (not shallow, fetch ok, main == origin/main 9585896, tip
+  10:38Z ~45 min old), lease acquired and written. Asks unchanged; pausing
+  this runner is still the recommendation.
