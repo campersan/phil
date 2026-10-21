@@ -4404,3 +4404,12 @@ schedule.json watch items pruned (19.7KB).
   27ab6d9. Six consecutive aborts since the 16:3xZ window; asks unchanged.
   The loop is now spending ~10 min of compute per hour on a known-dead
   network path. Please pause this runner until Polymarket is reachable.
+- **2026-10-21 23:1xZ recurrence (50th cycle, ABORTED):** unchanged.
+  resolve.py got `[Errno 54] Connection reset by peer` x3 on all 25 ids it
+  reached in ~5 min (2674154, 3503314, 601819, 601826, 5166819 ..
+  5194691), zero successes, stopped; no ledger or forecast writes. Sync:
+  fetch ok, main == origin/main 3fe14ca (tip 22:32Z, ~46 min old, no
+  collision); lease acquired and written. Seven consecutive aborts since
+  the 16:3xZ window. Asks unchanged: pause this runner (or restore the
+  route), and add a one-request reachability probe plus backoff to
+  core/pmapi so dead cycles fail in seconds.
