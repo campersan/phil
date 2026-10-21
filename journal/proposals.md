@@ -4328,3 +4328,11 @@ schedule.json watch items pruned (19.7KB).
   origin/main dad4bb3 (tip 14:07Z ~46 min old, no collision); lease
   acquired and written. Ledger: 2 open, cash $963.80. Asks unchanged;
   pausing this runner is still the recommendation.
+- **2026-10-21 15:4xZ recurrence (42nd abort):** unchanged. resolve.py
+  produced no settlements in 6+ min (output was buffered through `tail`,
+  so this run captured no error lines; the curl probe needs approval) and
+  was stopped; no ledger or forecast writes (git status clean). Sync: not
+  shallow, fetch ok, local main == origin/main 53064fd (tip 14:59Z ~45 min
+  old, no collision); lease acquired and written; core/ci.py status "none"
+  for dad4bb3. Ledger: 2 open, cash $963.80. Asks unchanged; pausing this
+  runner is still the recommendation.
