@@ -4350,3 +4350,15 @@ schedule.json watch items pruned (19.7KB).
   runner keeps running, `core/pmapi.get_json` should back off (for
   example 3 tries spread over ~60s instead of back-to-back), since
   windows of reachability do seem to exist.
+- **2026-10-21 17:5xZ recurrence (44th cycle, ABORTED):** the good window
+  from 16:3xZ has closed. resolve.py got `[Errno 54] Connection reset by
+  peer` x3 on every id it reached, both open bets first (2420478, 2420480),
+  then forecasts (3503314, 4039960, 2133900, 5166819, ...), with zero
+  successes and no ledger or forecast writes. CLOB `/book` also failed
+  (score.py MTM unavailable for both open positions). A first run piped
+  through `tail` showed nothing for ~9 min and was stopped. Sync: not
+  shallow, fetch ok, main == origin/main 25f5c40 (tip 16:59Z, ~46 min old,
+  no collision); lease acquired and written; core/ci.py status "none" for
+  ade5a53. The Amapa/Kansas estimates from the 43rd cycle are still
+  unrecorded. Asks unchanged: restore reachability or pause this runner,
+  fail fast on resets/451, and back off between retries.
