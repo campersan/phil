@@ -4209,3 +4209,12 @@ schedule.json watch items pruned (19.7KB).
   the lease was acquired and written. core/ci.py returned status "none" for
   40d626e. Asks (1) and (2) and the fail-fast ask are unchanged. Pausing
   this runner is still the recommendation.
+- **2026-10-21 03:0xZ recurrence (28th abort):** same result again, about
+  23h after the first abort today. resolve.py logged HTTP 451 x3 on the
+  first 33 open ids (1193094 through 5194718), with no ledger or forecast
+  writes, and I stopped it after about 5 minutes. git fetch needed approval
+  this session, so sync used local state e629587 (clean, up to date with
+  origin/main, tip 02:20Z ~46 min old, no collision). The lease was acquired
+  and written. core/ci.py returned status "none" for f75e143. Asks (1) and
+  (2) and the fail-fast ask are unchanged. Pausing this runner is still the
+  recommendation.
