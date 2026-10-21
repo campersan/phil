@@ -4336,3 +4336,17 @@ schedule.json watch items pruned (19.7KB).
   old, no collision); lease acquired and written; core/ci.py status "none"
   for dad4bb3. Ledger: 2 open, cash $963.80. Asks unchanged; pausing this
   runner is still the recommendation.
+- **2026-10-21 16:3xZ: PARTIAL recovery, then flapping (43rd cycle).**
+  resolve.py completed for the first time since 10-20 (19 forecasts
+  settled, 0 of 2 bets; graded in RETRO-20261021-1655). About 20 min
+  later gamma was resetting again: scan.py lost 3 of 4 discovery queries
+  (`liquid-multiday`, `active-today`, `econ-tag` failed, `by-liquidity`
+  returned 143 rows), WebFetch of gamma hit ECONNRESET, and both
+  `forecast.py record` calls failed after 3 tries. That left two
+  researched estimates unrecorded (Amapa R2 Lula 0.28, Kansas Senate D
+  0.37; both are in the cycles.log line). So the block is intermittent,
+  not lifted. The runner can settle in a good window but cannot be
+  relied on to finish a cycle. Asks unchanged. Additional ask: if this
+  runner keeps running, `core/pmapi.get_json` should back off (for
+  example 3 tries spread over ~60s instead of back-to-back), since
+  windows of reachability do seem to exist.
