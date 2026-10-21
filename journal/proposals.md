@@ -4395,3 +4395,12 @@ schedule.json watch items pruned (19.7KB).
   == origin/main 27ab6d9 (tip 20:41Z, ~46 min old, no collision); lease
   acquired and written. Five consecutive aborts since the 16:3xZ window;
   asks unchanged.
+- **2026-10-21 22:2xZ recurrence (49th cycle, ABORTED):** unchanged.
+  resolve.py got `[Errno 54] Connection reset by peer` x3 on all 43 ids it
+  reached in ~8 min (1193094, 2420478, 2420480, 2674154 .. 5194648), zero
+  successes, stopped; no ledger or forecast writes. Sync: not shallow,
+  fetch ok, main == origin/main 23e1ed2 (tip 21:38Z, ~45 min old, no
+  collision); lease acquired and written; core/ci.py status "none" for
+  27ab6d9. Six consecutive aborts since the 16:3xZ window; asks unchanged.
+  The loop is now spending ~10 min of compute per hour on a known-dead
+  network path. Please pause this runner until Polymarket is reachable.
