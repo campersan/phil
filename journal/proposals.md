@@ -4265,3 +4265,14 @@ schedule.json watch items pruned (19.7KB).
   collision). The lease was acquired and written, and core/ci.py returned
   status "none" for 32e6964. Asks (1) and (2) and the fail-fast ask are
   unchanged. Pausing this runner is still the recommendation.
+- **2026-10-21 08:53Z recurrence (35th abort), symptom changed:**
+  gamma-api now fails with `[Errno 54] Connection reset by peer` x3 per id
+  instead of HTTP 451. That looks like the block moved from an HTTP
+  response to a TCP reset, which is still a block. resolve.py got through
+  9 ids (1193094..5194714) with zero successes, made no ledger or forecast
+  writes, and was stopped after about 4 minutes. In this session `git
+  fetch` and env reads needed approval, so sync ran on local state ea75d09
+  (clean, up to date, tip 08:07Z ~46 min old, no collision). The lease was
+  acquired and written. Asks (1) and (2) and the fail-fast ask are
+  unchanged; a fail-fast check should cover connection resets as well as
+  451. Pausing this runner is still the recommendation.
