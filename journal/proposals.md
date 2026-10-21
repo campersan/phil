@@ -4379,3 +4379,12 @@ schedule.json watch items pruned (19.7KB).
   origin/main 14e412d (tip 18:50Z, ~45 min old, no collision); lease
   acquired and written. Three consecutive aborts since the 16:3xZ window;
   asks unchanged.
+- **2026-10-21 20:3xZ recurrence (47th cycle, ABORTED):** unchanged.
+  resolve.py got `[Errno 54] Connection reset by peer` x3 on all 50 ids it
+  reached in ~10 min (1193094, 2674154 .. 3930550), zero successes,
+  stopped; no ledger or forecast writes. Sync: not shallow, fetch ok, main
+  == origin/main e396e54 (tip 19:44Z, ~45 min old, no collision); lease
+  acquired and written; core/ci.py status "none" for 14e412d. Four
+  consecutive aborts since the 16:3xZ window; asks unchanged (a cheap
+  one-request reachability probe at the top of resolve.py would cut each
+  aborted cycle from ~10 min to seconds).
