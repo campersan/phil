@@ -4371,3 +4371,11 @@ schedule.json watch items pruned (19.7KB).
   core/ci.py status "none" for 25f5c40. Amapa/Kansas estimates still
   unrecorded. Two consecutive aborts since the 16:3xZ window; asks
   unchanged.
+- **2026-10-21 19:3xZ recurrence (46th cycle, ABORTED):** unchanged.
+  resolve.py got `[Errno 54] Connection reset by peer` x3 on all 44 ids it
+  reached in ~8 min (1193094, 5194672, 2420478, 2420480 = all held
+  markets first, then 2674154 .. 5194644), zero successes, stopped; no
+  ledger or forecast writes. Sync: not shallow, fetch ok, main ==
+  origin/main 14e412d (tip 18:50Z, ~45 min old, no collision); lease
+  acquired and written. Three consecutive aborts since the 16:3xZ window;
+  asks unchanged.
