@@ -4286,3 +4286,12 @@ schedule.json watch items pruned (19.7KB).
   (cover resets as well as 451) are unchanged. Pausing this runner is
   still the recommendation: 36 consecutive hourly aborts have produced
   nothing.
+- **2026-10-21 10:2xZ recurrence (37th abort):** unchanged. gamma-api
+  returned `[Errno 54] Connection reset by peer` x3 on all 40 ids
+  resolve.py reached (1193094..5194646) in ~8 min, with zero successes and
+  no ledger or forecast writes; the run was stopped. Sync was clean (fetch
+  ok, main == origin/main d42a776, tip 09:44Z ~45 min old, no collision),
+  the lease was acquired and written, and core/ci.py returned status
+  "none" for 6e1fcf8. Asks (1) and (2) and the fail-fast ask (cover
+  resets as well as 451) are unchanged. Pausing this runner is still the
+  recommendation.
