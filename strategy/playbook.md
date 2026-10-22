@@ -8710,3 +8710,8 @@ I put the Yes at 0.42 against a 0.29 mid, using an actual-minus-guide
 history I wrote from memory. It missed (+0.092 dBrier, counterfactual
 -5.00). An unsourced beat history does not justify going above the mid
 on a guide-adjacent rung.
+Tally (RETRO-20261022-1955): the sibling Sep core MoM 0.3 leg
+(`4d189bc6b461`, 0.34 vs 0.325, +0.01 Aug-persistence shade away from
+the nowcast) won, -0.020 dBrier. The ladder nets +0.004, about at the
+mid. The leg that lost was the one leaning toward the nowcast, which
+fits the centring rule. No rule change.
