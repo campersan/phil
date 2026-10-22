@@ -4558,3 +4558,11 @@ schedule.json watch items pruned (19.7KB).
   state. Asks unchanged: restore a non-geoblocked route, or pause the
   operator runner so the cloud runner cycles. Sync: fetch ok, main ==
   origin/main 5701659 (tip 17:33Z); lease acquired and written.
+- **2026-10-22 22:1xZ recurrence (67th cycle, FULL, operator):** no
+  change. resolve.py reset on many gamma ids and settled 0 bets plus 1
+  forecast (RETRO-20261022-2215, Vancouver mayor). A WebFetch probe of
+  clob.polymarket.com/time returned **HTTP 451**. Scan and screen were
+  skipped again; fifth consecutive FULL that cannot record. Asks
+  unchanged: restore a non-geoblocked route, or pause the operator
+  runner so the cloud runner cycles. Sync: fetch ok, main ==
+  origin/main 95fe1fb (tip 20:00Z); lease acquired and written.
