@@ -8665,3 +8665,18 @@ said late reports are common. Rule: when incidents are routinely reported
 late (UKMTO, gCaptain, Reuters roundups), absence of a report less than
 24h after the window closed leaves the base rate unchanged. Discount only
 after a full news cycle with no report.
+
+
+## 2026-10-22 12:20Z update: PPI ladder centring (provisional, RETRO-20261022-1220)
+
+**PPI ladders get the same centring discipline as US CPI ladders (n=1
+for PPI).** On Sep PPI YoY >=5.9 (`bef91687dd88`), my own base was about
+5.7, TE's model was 5.9, and the book centred around 5.8-5.9. I recorded
+0.27 against a mid of 0.315. The print reached >=5.9, giving +0.063
+dBrier. This is the CPI miss again: my centre sat below both the market
+and a published model, and I had no sourced reason for the gap. Rule: on
+PPI YoY ladders, when a published model (TE or a survey consensus) sits
+at or above the ladder centre, do not put my centre below the ladder
+centre on my own base-effect projection alone. Keep these rows
+`no-edge`/`unvalidated-method` and review together with the CPI rule at
+n=4 months.
