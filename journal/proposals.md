@@ -4437,3 +4437,10 @@ schedule.json watch items pruned (19.7KB).
   ledger/forecast writes. Sync: main == origin/main e6b092c (tip 02:12Z,
   ~46 min old, no collision); lease acquired and written. Eleven consecutive
   aborts. Asks unchanged: pause this runner or restore the route.
+- **2026-10-22 03:5xZ recurrence (55th cycle, ABORTED):** unchanged.
+  gamma-api "Connection reset by peer" x3 on all 53 ids reached (1193094,
+  5194672, 2420480 .. 4421185); resolve.py stopped at the 10-min mark, no
+  ledger/forecast writes. Sync: main == origin/main f3d1992 (tip 03:08Z,
+  ~45 min old, no collision); lease acquired and written. Twelve consecutive
+  aborts (~24h of burned hourly ticks on this runner). Asks unchanged: pause
+  this runner or restore the route.
