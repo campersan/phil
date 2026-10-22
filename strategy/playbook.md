@@ -1556,6 +1556,12 @@ brier_delta +0.0838 on n=35. A primary-source check (news page, models page)
 still runs, but only a POSITIVE finding (the launch is live, or an official
 date) moves est_prob off the mid. "Not out yet" earlier on the day moves
 nothing. Re-grade the shade views at n=8.
+Shade-view tally (distinct markets, started RETRO-20261022-1400): Gemini
+4.0 by Oct 13 (5429959) shades 0.35 and 0.55 vs the recorded mid rows
+0.71/0.78, resolved Yes: the shade would have scored 0.42/0.20 vs
+0.08/0.05 recorded. Gemini Argon Oct 13 (7906e99eb9ab lean 0.40, Yes)
+was also later than the market. Distinct markets with a graded shade:
+2, both against the shade. Add rows here as they settle.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
