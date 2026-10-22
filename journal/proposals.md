@@ -4494,3 +4494,16 @@ schedule.json watch items pruned (19.7KB).
   old, no collision); lease acquired and written. One good window in the
   last 17 ticks. Asks unchanged: restore a stable route, run the cloud
   runner, or pause this loop.
+- **2026-10-22 11:5xZ (62nd cycle, PARTIAL again):** resolve.py ran to
+  completion this time (~11:58-12:1xZ). 33 ids reset x3, but enough
+  fetches got through to settle 6 forecasts (5 back-dated Oct 13-15,
+  including 5617888 and 4476051, which failed at 10:0xZ; Spotify settled
+  12:03Z). These are graded in RETRO-20261022-1220. The scan at 12:32Z
+  then got "Connection reset by peer" x3 on all 4 queries, so 0
+  candidates, and screen/research/bets were skipped. The pattern from
+  the 60th cycle repeats: resolve's per-market GETs partly get through,
+  while the scan's list queries (larger responses, limit=100) fail every
+  time. That suggests the path drops longer transfers, not only some
+  connections. Asks unchanged: restore a stable route or run the cloud
+  runner. Sync: fetch ok, main == origin/main 569a234 (tip 11:11Z, ~46 min
+  old); lease acquired and written.
