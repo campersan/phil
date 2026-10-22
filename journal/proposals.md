@@ -4459,3 +4459,11 @@ schedule.json watch items pruned (19.7KB).
   consecutive aborts. A direct curl probe of gamma needed approval and was
   not run, so the reset is still only seen through resolve.py. Asks
   unchanged: pause this runner or restore the route.
+- **2026-10-22 08:1xZ recurrence (58th cycle, ABORTED):** unchanged.
+  gamma-api "Connection reset by peer" x3 on all 24 ids reached in ~5 min
+  (5194672, 2420480, 2674154, 3503314, 5166817, 5194714 .. 5194691);
+  resolve.py stopped at ~6 min, no ledger/forecast writes. Sync: fetch ok,
+  main == origin/main af526cb (tip 07:29Z, ~45 min old, no collision);
+  lease acquired and written. Fifteen consecutive aborts. The curl probe
+  again needed approval and was not run. Asks unchanged: pause this runner
+  or restore the route.
