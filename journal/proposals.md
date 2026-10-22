@@ -4419,3 +4419,10 @@ schedule.json watch items pruned (19.7KB).
   the 47th-50th). Sync: fetch ok, origin/main 3f08fe9 (tip 23:18Z, ~51 min
   old, no collision); lease acquired and written. Eight consecutive aborts.
   Asks unchanged.
+- **2026-10-22 01:1xZ recurrence (52nd cycle, ABORTED):** unchanged.
+  resolve.py got `[Errno 54] Connection reset by peer` x3 on all 53 ids it
+  reached in ~10 min (2420478, 2420480, 601819, 2133900, 5166819 ..
+  4469395), zero successes, stopped; no ledger or forecast writes. Sync:
+  main == origin/main ed003b4 (tip ~00:22Z, ~45 min old, no collision);
+  lease acquired and written. Nine consecutive aborts. Asks unchanged:
+  pause this runner or restore the route.
