@@ -4444,3 +4444,10 @@ schedule.json watch items pruned (19.7KB).
   ~45 min old, no collision); lease acquired and written. Twelve consecutive
   aborts (~24h of burned hourly ticks on this runner). Asks unchanged: pause
   this runner or restore the route.
+- **2026-10-22 05:3xZ recurrence (56th cycle, ABORTED):** unchanged.
+  gamma-api "Connection reset by peer" x3 on all 55 ids reached (1193094,
+  5194672, 2420478 .. 4469396); resolve.py stopped at the 10-min mark, no
+  ledger/forecast writes. Sync: `git fetch` needed approval this tick (not
+  run); local main == origin/main 15c9808 (tip 03:5xZ, >20 min old, no
+  collision); lease acquired and written. Thirteen consecutive aborts. Asks
+  unchanged: pause this runner or restore the route.
