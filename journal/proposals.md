@@ -4426,3 +4426,8 @@ schedule.json watch items pruned (19.7KB).
   main == origin/main ed003b4 (tip ~00:22Z, ~45 min old, no collision);
   lease acquired and written. Nine consecutive aborts. Asks unchanged:
   pause this runner or restore the route.
+- **2026-10-22 02:0xZ recurrence (53rd cycle, ABORTED):** unchanged.
+  resolve.py produced no output for 10 min and was stopped (same hang
+  profile as the 47th-52nd). Sync: main == origin/main f9c289d (tip 01:16Z,
+  ~45 min old, no collision); lease acquired and written. Ten consecutive
+  aborts. Asks unchanged: pause this runner or restore the route.
