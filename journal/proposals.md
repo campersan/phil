@@ -4486,3 +4486,11 @@ schedule.json watch items pruned (19.7KB).
   stable route or run the cloud runner. Sync: fetch ok, main ==
   origin/main 5d3d69a (tip 09:14Z, ~45 min old); lease acquired and
   written.
+- **2026-10-22 11:0xZ recurrence (61st cycle, ABORTED):** the 10:0xZ
+  window has closed again. gamma-api "Connection reset by peer" x3 on all
+  54 ids reached (1193094, 5194672, 2420478 .. 5166820, 4469649, 4421183);
+  resolve.py hit the 10-min timeout and was stopped, no ledger/forecast
+  writes. Sync: fetch ok, main == origin/main 9a3c625 (tip 10:15Z, ~45 min
+  old, no collision); lease acquired and written. One good window in the
+  last 17 ticks. Asks unchanged: restore a stable route, run the cloud
+  runner, or pause this loop.
