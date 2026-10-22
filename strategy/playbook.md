@@ -8680,3 +8680,18 @@ at or above the ladder centre, do not put my centre below the ladder
 centre on my own base-effect projection alone. Keep these rows
 `no-edge`/`unvalidated-method` and review together with the CPI rule at
 n=4 months.
+
+## 2026-10-22 13:00Z update: CPI centring covers core ladders (RETRO-20261022-1300)
+
+**The 10:15Z US CPI centring rule applies to core CPI ladders too (n=3
+months: Aug headline, Sep headline, Sep core).** On Sep core YoY 2.4
+(`e79065a1f9f7`), the Cleveland core nowcast was 2.39 and the ladder
+mean was about 2.45. I shifted my centre halfway toward the nowcast and
+recorded 0.46 against a mid of 0.365. The print missed 2.4, giving
++0.078 dBrier. Rule: on core CPI ladders, as on headline, the Cleveland
+nowcast alone does not move my centre off the ladder centre.
+Observation, not a rule (n=1): China Sep CPI (`32b8df4ad98d`,
+`d6008af07429`). Both rows kept an off-centre bucket above the mid
+because of unsourced consensus-error width, and both lost (+0.022,
++0.023). Unsourced tail width is not a reason to hold an off-centre
+bucket above the book.
