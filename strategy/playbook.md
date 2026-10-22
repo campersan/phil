@@ -8701,3 +8701,12 @@ Observation, not a rule (n=1): China Sep CPI (`32b8df4ad98d`,
 because of unsourced consensus-error width, and both lost (+0.022,
 +0.023). Unsourced tail width is not a reason to hold an off-centre
 bucket above the book.
+Tally (RETRO-20261022-1720): Sep core MoM 0.2 (`1a7d40e9b4ae`) is the
+4th nowcast-side lean to lose. The nowcast was 0.20 and analysts had
+0.23-0.30. I held 0.2 at 0.42 against a 0.39 mid, and the print missed,
+giving +0.024 dBrier. The rule covers MoM ladders as well as YoY.
+Observation, not a rule (n=1): Spotify MAU >790M (`6e62e56d6efb`, WSV).
+I put the Yes at 0.42 against a 0.29 mid, using an actual-minus-guide
+history I wrote from memory. It missed (+0.092 dBrier, counterfactual
+-5.00). An unsourced beat history does not justify going above the mid
+on a guide-adjacent rung.
