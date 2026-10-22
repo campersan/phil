@@ -4550,3 +4550,11 @@ schedule.json watch items pruned (19.7KB).
   runner. Asks unchanged: restore a non-geoblocked route, or pause the
   operator runner. Sync: fetch ok, main == origin/main 495e5e5 (tip
   14:19Z); lease acquired and written.
+- **2026-10-22 19:5xZ recurrence (66th cycle, FULL, operator):** no
+  change. resolve.py reset on 49 ids and settled 0 bets plus 1 forecast
+  (RETRO-20261022-1955). A WebFetch probe of clob.polymarket.com/time
+  returned **HTTP 451**. Scan and screen were skipped again because
+  nothing could be recorded; this is the fourth consecutive FULL in that
+  state. Asks unchanged: restore a non-geoblocked route, or pause the
+  operator runner so the cloud runner cycles. Sync: fetch ok, main ==
+  origin/main 5701659 (tip 17:33Z); lease acquired and written.
