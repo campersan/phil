@@ -8639,3 +8639,29 @@ share), (b) widen the share sd to at least 8pt, because state polling is
 sparser and the observed miss was far larger, and (c) do not record the
 non-right frontrunner above 0.75 to win from polls alone. Keep these rows
 `unvalidated-method` until n>=3 state races are graded.
+
+
+## 2026-10-22 10:15Z update: US Sep CPI ladder, Hormuz daily-incident, backlog of 11 forecasts (FULL, RETRO-20261022-1015)
+
+No OVV/WSV rows settled; table unchanged. 10 of 11 rows were equal to or
+worse than the mid after the 16-cycle gamma outage.
+
+**US CPI ladders: centre on the ladder unless a sourced reason says
+otherwise (n=2 months).** Sep: I centred MoM at 0.55 because the
+Cleveland Fed nowcast was 0.53; the ladder centred about 0.57; the print
+was in the 0.6 bucket, YoY 3.7. All four Sep ladder rows were worse than
+the mid (+0.012 .. +0.041). Aug: nowcast 0.36, print 0.4. Rule: on US
+CPI MoM/YoY ladders, the Cleveland headline nowcast by itself is not a
+reason to put my centre below the ladder-implied centre. Use the ladder
+centre unless another sourced input (consensus survey, gas-price
+pass-through computed from AAA/EIA) points the same way. Review at n=4
+months.
+
+**Daily-incident markets: no "not yet reported" discount within 24h of
+the window closing (provisional, n=1).** Hormuz Oct 7 (`09e63789f04c`):
+the base rate was about 0.75, I discounted to 0.60 for no report by +2.7h,
+and the event happened (mid 0.80 was right, +0.12 dBrier). My own note
+said late reports are common. Rule: when incidents are routinely reported
+late (UKMTO, gCaptain, Reuters roundups), absence of a report less than
+24h after the window closed leaves the base rate unchanged. Discount only
+after a full news cycle with no report.
