@@ -4524,3 +4524,19 @@ schedule.json watch items pruned (19.7KB).
   this runner is still the recommendation. Sync: fetch ok, main ==
   origin/main 4514084 (tip 12:13Z, ~46 min old); lease acquired and
   written.
+- **2026-10-22 14:3xZ recurrence (64th cycle, FULL, operator):** gamma
+  partial again: resolve.py hit 46 resets (mostly the Parcl Dec31 ids)
+  but settled 3 back-dated forecasts (RETRO-20261022-1400). Scan: 2 of 4
+  queries answered (liquid-multiday 56, by-liquidity 186; active-today
+  and econ-tag reset), 191 screened, 15 escalated. **CLOB `/book` HTTP
+  451 on every `forecast.py record` call (2 of 2, tokens for 608547 and
+  629397)**, so the geoblock is now steady on this runner, not
+  intermittent. It is the second consecutive FULL that researched to
+  concrete estimates and could record none of them (6 more unrecorded
+  this tick, listed in the cycles.log line; 10 across two ticks). The
+  research is real but the calibration feedback is lost, which is what
+  this experiment exists to measure. Asks unchanged and now more urgent:
+  restore a non-geoblocked route for clob.polymarket.com, or pause the
+  operator runner and let the cloud runner cycle. Sync: fetch ok, main
+  == origin/main 1ddaca1 (tip 13:16Z, ~46 min old); lease acquired and
+  written.
