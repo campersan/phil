@@ -4474,3 +4474,15 @@ schedule.json watch items pruned (19.7KB).
   (tip 08:20Z, ~46 min old, no collision); lease acquired and written.
   Sixteen consecutive aborts. The curl probe again needed approval and was
   not run. Asks unchanged: pause this runner or restore the route.
+- **2026-10-22 10:0xZ (60th cycle, PARTIAL recovery, then reset again):**
+  resolve.py (10:00-10:1xZ) reached gamma for most ids: only 3 fetches
+  failed (5429959, 5617888, 4476051). It settled 11 back-dated forecasts
+  (Oct 13-19), graded in RETRO-20261022-1015. The scan at 10:34Z then got
+  "Connection reset by peer" x3 on all 4 discovery queries, so 0
+  candidates, and screen/research/bets were skipped. CLOB /book MTM was
+  also unreachable. The route is intermittent rather than dead: a
+  window of a few minutes opened and then closed. That points to a flaky
+  path (VPN or region) rather than a hard block. Asks unchanged: restore a
+  stable route or run the cloud runner. Sync: fetch ok, main ==
+  origin/main 5d3d69a (tip 09:14Z, ~45 min old); lease acquired and
+  written.
