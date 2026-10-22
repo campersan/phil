@@ -4507,3 +4507,20 @@ schedule.json watch items pruned (19.7KB).
   connections. Asks unchanged: restore a stable route or run the cloud
   runner. Sync: fetch ok, main == origin/main 569a234 (tip 11:11Z, ~46 min
   old); lease acquired and written.
+- **2026-10-22 13:0xZ recurrence (63rd cycle, partial, CLOB 451 returns):**
+  resolve.py completed (31 ids reset x3) and settled 8 back-dated
+  forecasts, graded in RETRO-20261022-1300. Scan list queries were mixed:
+  a probe run at ~13:09Z returned 227 candidates, and the real
+  scan|prepare run at ~13:10Z lost 3 of 4 queries (48 candidates, 43
+  screened, 15 escalated). That weakens the "list queries always fail"
+  reading from the 62nd cycle. New: at ~13:28Z `forecast.py record` got
+  through gamma for 630746, but `clob.polymarket.com/book` returned
+  **HTTP 451 Unavailable For Legal Reasons**. Two other record calls
+  (2589813, 634976) reset on gamma. So the CLOB geoblock from 10-20 is
+  live again on this runner, alongside gamma resets. With no CLOB book,
+  no forecast or bet can be recorded even when gamma answers. Four
+  researched estimates are unrecorded (they are in the cycles.log line).
+  Asks unchanged: restore a stable route or run the cloud runner; pausing
+  this runner is still the recommendation. Sync: fetch ok, main ==
+  origin/main 4514084 (tip 12:13Z, ~46 min old); lease acquired and
+  written.
