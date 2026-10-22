@@ -4467,3 +4467,10 @@ schedule.json watch items pruned (19.7KB).
   lease acquired and written. Fifteen consecutive aborts. The curl probe
   again needed approval and was not run. Asks unchanged: pause this runner
   or restore the route.
+- **2026-10-22 09:1xZ recurrence (59th cycle, ABORTED):** unchanged.
+  gamma-api "Connection reset by peer" x3 on all 38 ids reached in ~7 min
+  (.. 5194690, 5194691, 5194668 .. 5194659); resolve.py stopped at ~7 min,
+  no ledger/forecast writes. Sync: fetch ok, main == origin/main 0e12909
+  (tip 08:20Z, ~46 min old, no collision); lease acquired and written.
+  Sixteen consecutive aborts. The curl probe again needed approval and was
+  not run. Asks unchanged: pause this runner or restore the route.
