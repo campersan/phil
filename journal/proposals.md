@@ -4540,3 +4540,13 @@ schedule.json watch items pruned (19.7KB).
   operator runner and let the cloud runner cycle. Sync: fetch ok, main
   == origin/main 1ddaca1 (tip 13:16Z, ~46 min old); lease acquired and
   written.
+- **2026-10-22 17:2xZ recurrence (65th cycle, FULL, operator):** both
+  routes are broken. resolve.py reset on 52 ids and settled 0 bets plus
+  2 forecasts (RETRO-20261022-1720). A WebFetch probe of
+  clob.polymarket.com/time returned **HTTP 451**. `forecast.py record`
+  for 3081958 (CBR Oct 23 cut, own No 0.92) reset on gamma. This is the
+  third consecutive FULL that cannot record. I skipped scan and screen
+  this tick so the 15 screener batches stay available to the cloud
+  runner. Asks unchanged: restore a non-geoblocked route, or pause the
+  operator runner. Sync: fetch ok, main == origin/main 495e5e5 (tip
+  14:19Z); lease acquired and written.
