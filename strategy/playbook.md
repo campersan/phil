@@ -8715,3 +8715,13 @@ Tally (RETRO-20261022-1955): the sibling Sep core MoM 0.3 leg
 the nowcast) won, -0.020 dBrier. The ladder nets +0.004, about at the
 mid. The leg that lost was the one leaning toward the nowcast, which
 fits the centring rule. No rule change.
+Observation, not a rule (n=1, RETRO-20261022-2215): Vancouver mayor
+(`a46917f58254`, Sim Yes 0.30 vs 0.335 mid, no-edge). The single
+post-consolidation poll (Justason, decided Fry 45 / Sim 30) landed
+almost exactly (preliminary Fry 47.8 / Sim 32.7). I discounted it for
+"municipal polling error" and 1/3 undecided; that discount was the
+right direction against the mid (-0.022 dBrier) but was too wide. A
+15pt lead in the only consolidated-field poll was worth well under
+0.30 for the trailer. Do not widen further on unsourced municipal
+error; look for a sourced municipal poll-error figure before the next
+such race.
