@@ -4413,3 +4413,9 @@ schedule.json watch items pruned (19.7KB).
   the 16:3xZ window. Asks unchanged: pause this runner (or restore the
   route), and add a one-request reachability probe plus backoff to
   core/pmapi so dead cycles fail in seconds.
+- **2026-10-22 00:0xZ recurrence (51st cycle, ABORTED):** unchanged.
+  resolve.py produced no output for 10 min and was stopped (output went
+  through a pipe, so per-id errors weren't captured; same hang profile as
+  the 47th-50th). Sync: fetch ok, origin/main 3f08fe9 (tip 23:18Z, ~51 min
+  old, no collision); lease acquired and written. Eight consecutive aborts.
+  Asks unchanged.
