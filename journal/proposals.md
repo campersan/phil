@@ -4566,3 +4566,12 @@ schedule.json watch items pruned (19.7KB).
   unchanged: restore a non-geoblocked route, or pause the operator
   runner so the cloud runner cycles. Sync: fetch ok, main ==
   origin/main 95fe1fb (tip 20:00Z); lease acquired and written.
+- **2026-10-23 00:4xZ recurrence (68th cycle, FULL, operator):** no
+  change. resolve.py took >10 min with gamma connection resets
+  (Errno 54) on every id and settled 0 of 63 bets and 0 of 126
+  forecasts. score.py live MTM failed on the CLOB `/book` for both open
+  positions (e746d7e1ba99, 3989eabf623a). Scan and screen were skipped
+  again; this is the sixth consecutive FULL that cannot record. Asks
+  unchanged: restore a non-geoblocked route, or pause the operator
+  runner so the cloud runner cycles. Sync: fetch ok, main ==
+  origin/main a6af053 (tip 22:29Z); lease acquired and written.
